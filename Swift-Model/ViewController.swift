@@ -12,14 +12,40 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        loadWeatherInfo()
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
 
 
 }
 
+
+extension ViewController {
+
+    ///  加载天气信息
+    func loadWeatherInfo() {
+        
+        let URLString = "http://apicloud.mob.com/v1/weather/query?key=10557a5d75b9c&city=%E8%81%8A%E5%9F%8E&province=%E8%81%8A%E5%9F%8E"
+        
+        let url = NSURL(string: URLString)
+        
+        NSURLSession.sharedSession().dataTaskWithURL(url!) { (data: NSData?, response: NSURLResponse?, error: NSError?) in
+            
+            //省略了错误判断
+            let json = (try! NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers)) as! NSDictionary
+            
+            let model = WeatherModel(dict: json as! [String : AnyObject])
+            
+            print(model)
+            
+        }.resume()
+
+    }
+
+}

@@ -12,6 +12,7 @@
 		79073A541D11353300746C34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79073A521D11353300746C34 /* Main.storyboard */; };
 		79073A561D11353300746C34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79073A551D11353300746C34 /* Assets.xcassets */; };
 		79073A591D11353300746C34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79073A571D11353300746C34 /* LaunchScreen.storyboard */; };
+		79073A611D1136DC00746C34 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79073A601D1136DC00746C34 /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		79073A551D11353300746C34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79073A581D11353300746C34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79073A5A1D11353300746C34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79073A601D1136DC00746C34 /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				79073A4E1D11353300746C34 /* AppDelegate.swift */,
 				79073A501D11353300746C34 /* ViewController.swift */,
+				79073A601D1136DC00746C34 /* WeatherModel.swift */,
 				79073A521D11353300746C34 /* Main.storyboard */,
 				79073A551D11353300746C34 /* Assets.xcassets */,
 				79073A571D11353300746C34 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79073A511D11353300746C34 /* ViewController.swift in Sources */,
+				79073A611D1136DC00746C34 /* WeatherModel.swift in Sources */,
 				79073A4F1D11353300746C34 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
