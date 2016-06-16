@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        OCloadWeatherInfo()
+        ReflectLoadWeatherInfo()
         
     }
 
@@ -67,6 +67,27 @@ extension ViewController {
             
             }.resume()
         
+    }
+    
+    
+    func ReflectLoadWeatherInfo() {
+        let URLString = "http://apicloud.mob.com/v1/weather/query?key=10557a5d75b9c&city=%E8%81%8A%E5%9F%8E&province=%E8%81%8A%E5%9F%8E"
+        
+        let url = NSURL(string: URLString)
+    
+        
+        
+        NSURLSession.sharedSession().dataTaskWithURL(url!) { (data: NSData?, response: NSURLResponse?, error: NSError?) in
+            
+            //省略了错误判断
+            let json = (try! NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers)) as! NSDictionary
+            
+            
+            let model = ReflectModel.parse(dict: json)
+            
+            print(model)
+            
+            }.resume()
     }
 
 

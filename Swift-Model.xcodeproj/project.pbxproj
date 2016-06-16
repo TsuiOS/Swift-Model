@@ -33,6 +33,7 @@
 		797FA62B1D123D650006017A /* Reflect+Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797FA6231D123D650006017A /* Reflect+Property.swift */; };
 		797FA62C1D123D650006017A /* Reflect+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797FA6241D123D650006017A /* Reflect+Type.swift */; };
 		797FA62D1D123D650006017A /* Reflect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797FA6251D123D650006017A /* Reflect.swift */; };
+		797FA6321D1243DA0006017A /* ReflectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797FA6311D1243DA0006017A /* ReflectModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		797FA6231D123D650006017A /* Reflect+Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+Property.swift"; sourceTree = "<group>"; };
 		797FA6241D123D650006017A /* Reflect+Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+Type.swift"; sourceTree = "<group>"; };
 		797FA6251D123D650006017A /* Reflect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reflect.swift; sourceTree = "<group>"; };
+		797FA6311D1243DA0006017A /* ReflectModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReflectModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				79073A4E1D11353300746C34 /* AppDelegate.swift */,
 				79073A501D11353300746C34 /* ViewController.swift */,
 				79073A601D1136DC00746C34 /* WeatherModel.swift */,
+				797FA6311D1243DA0006017A /* ReflectModel.swift */,
 				79073A631D11580D00746C34 /* WearherModelOC.h */,
 				79073A641D11580D00746C34 /* WearherModelOC.m */,
 				79073A621D11580C00746C34 /* Swift-Model-Bridging-Header.h */,
@@ -279,6 +282,7 @@
 				79073A7E1D115A3700746C34 /* MJExtensionConst.m in Sources */,
 				79073A831D115A3700746C34 /* NSObject+MJClass.m in Sources */,
 				79073A861D115A3700746C34 /* NSObject+MJProperty.m in Sources */,
+				797FA6321D1243DA0006017A /* ReflectModel.swift in Sources */,
 				79073A851D115A3700746C34 /* NSObject+MJKeyValue.m in Sources */,
 				79073A801D115A3700746C34 /* MJProperty.m in Sources */,
 				797FA62D1D123D650006017A /* Reflect.swift in Sources */,
