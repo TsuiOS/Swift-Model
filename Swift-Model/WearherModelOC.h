@@ -30,8 +30,6 @@
 /** 天气 */
 @property (nonatomic, copy) NSString *weather;
 
-
-
 @end
 
 @interface XNFuture : NSObject
